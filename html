@@ -4,26 +4,30 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kalkulator BMI</title>
+    <!-- Link ke file CSS -->
     <link rel="stylesheet" href="css/style.css">
+    <!-- Favicon untuk website -->
     <link rel="icon" href="https://www.example.com/favicon.ico">
 </head>
 <body>
     <div class="container">
         <h1>Kalkulator BMI</h1>
+        
+        <!-- Form untuk input data BMI -->
         <form id="bmi-form">
-            <!-- Input Berat Badan -->
+            <!-- Input untuk Berat Badan -->
             <div class="form-group">
                 <label for="weight">Berat Badan (kg):</label>
                 <input type="number" id="weight" name="weight" required placeholder="Masukkan berat badan dalam kg">
             </div>
             
-            <!-- Input Tinggi Badan -->
+            <!-- Input untuk Tinggi Badan -->
             <div class="form-group">
                 <label for="height">Tinggi Badan (cm):</label>
                 <input type="number" id="height" name="height" required placeholder="Masukkan tinggi badan dalam cm">
             </div>
             
-            <!-- Input Jenis Kelamin -->
+            <!-- Input untuk Jenis Kelamin -->
             <div class="form-group">
                 <label for="gender">Jenis Kelamin:</label>
                 <select id="gender" name="gender">
@@ -35,19 +39,19 @@
             <button type="submit">Hitung BMI</button>
         </form>
 
-        <!-- Hasil BMI -->
+        <!-- Bagian untuk menampilkan hasil BMI -->
         <div id="result">
-            <p id="bmi-result"></p>
-            <p id="bmi-explanation"></p>
+            <p id="bmi-result"></p> <!-- Menampilkan hasil BMI -->
+            <p id="bmi-explanation"></p> <!-- Menampilkan penjelasan hasil BMI -->
         </div>
     </div>
-    
-    <!-- Footer -->
+
+    <!-- Footer website -->
     <footer>
-        <p>&copy; 2024 Kalkulator BMI | Dibuat dengan ❤️ oleh Liyya </p>
+        <p>&copy; 2024 Kalkulator BMI | Dibuat dengan ❤️ oleh [Nama Kamu]</p>
     </footer>
 
+    <!-- Link ke file JavaScript -->
     <script src="js/script.js"></script>
 </body>
 </html>
-
