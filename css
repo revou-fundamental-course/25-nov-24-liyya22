@@ -1,12 +1,14 @@
+/* Reset beberapa style default untuk memastikan konsistensi antar browser */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+/* Styling untuk body dan background */
 body {
-    font-family: 'Times New Roman', sans-serif;
-    background: linear-gradient(to right, #00bcd4, #8e24aa);
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(to right, #00bcd4, #8e24aa); /* Background dengan gradien biru ke ungu */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -14,91 +16,102 @@ body {
     color: white;
 }
 
+/* Styling untuk container utama (tampilan form dan hasil) */
 .container {
-    background-color: rgba(255, 255, 255, 0.95); /* White background with some transparency */
+    background-color: rgba(255, 255, 255, 0.95); /* Warna putih transparan */
     padding: 40px;
     border-radius: 15px;
-    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1); /* Efek bayangan untuk membuat elemen terlihat terangkat */
     width: 100%;
     max-width: 450px;
     text-align: center;
 }
 
+/* Styling untuk heading h1 */
 h1 {
     font-size: 2.5rem;
     margin-bottom: 20px;
-    color: #333;
+    color: #333; /* Warna gelap untuk judul */
 }
 
+/* Styling untuk label input */
 label {
     font-size: 1rem;
     margin-bottom: 10px;
     display: block;
-    color: #333;
+    color: #333; /* Warna teks label */
 }
 
+/* Styling untuk input, select, dan button */
 input, select, button {
     width: 100%;
     padding: 12px;
     margin-bottom: 15px;
     border-radius: 8px;
-    border: 2px solid #ddd;
+    border: 2px solid #ddd; /* Border ringan untuk input */
     font-size: 1rem;
 }
 
+/* Efek saat fokus pada input atau select */
 input:focus, select:focus {
     border-color: #00bcd4;
-    outline: none;
+    outline: none; /* Menghilangkan outline saat fokus */
 }
 
+/* Styling untuk button dengan efek hover */
 button {
-    background-color: #00bcd4;
+    background-color: #00bcd4; /* Warna latar belakang button */
     color: white;
     border: none;
     cursor: pointer;
     font-size: 1.1rem;
-    transition: background-color 0.3s, transform 0.3s ease;
-    box-shadow: 0 4px 10px rgba(0, 188, 212, 0.3);
+    transition: background-color 0.3s, transform 0.3s ease; /* Efek transisi saat hover */
+    box-shadow: 0 4px 10px rgba(0, 188, 212, 0.3); /* Efek bayangan untuk button */
 }
 
+/* Efek saat hover pada button */
 button:hover {
-    background-color: #0097a7;
-    transform: scale(1.05);
+    background-color: #0097a7; /* Warna button saat hover */
+    transform: scale(1.05); /* Efek pembesaran saat hover */
 }
 
+/* Styling untuk menampilkan hasil BMI */
 #result {
     margin-top: 20px;
-    background-color: #f4f4f9;
+    background-color: #f4f4f9; /* Background hasil lebih terang */
     padding: 20px;
     border-radius: 10px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-    color: #333;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Efek bayangan pada hasil */
+    color: #333; /* Warna teks hasil */
     font-size: 1.2rem;
 }
 
+/* Styling untuk hasil BMI */
 #bmi-result {
     font-weight: bold;
     font-size: 1.5rem;
 }
 
+/* Styling untuk penjelasan hasil BMI */
 #bmi-explanation {
     margin-top: 10px;
     font-size: 1rem;
-    color: #666;
+    color: #666; /* Warna teks penjelasan */
 }
 
+/* Styling untuk footer */
 footer {
     text-align: center;
     margin-top: 30px;
     font-size: 1rem;
-    color: #333;
+    color: #333; /* Warna teks footer */
 }
 
-
+/* Animasi untuk menampilkan hasil BMI */
 #result {
     opacity: 0;
     transform: translateY(20px);
-    animation: fadeInUp 0.5s forwards;
+    animation: fadeInUp 0.5s forwards; /* Efek animasi masuk */
 }
 
 @keyframes fadeInUp {
@@ -108,7 +121,7 @@ footer {
     }
 }
 
-
+/* Responsif untuk perangkat dengan layar kecil */
 @media (max-width: 480px) {
     .container {
         padding: 20px;
