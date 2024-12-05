@@ -7,7 +7,7 @@
 
 /* Styling untuk body dan background */
 body {
-    font-family: 'Arial', sans-serif;
+    font-family: 'Times New Roman', sans-serif;
     background: linear-gradient(to right, #00bcd4, #8e24aa); /* Background dengan gradien biru ke ungu */
     display: flex;
     justify-content: center;
